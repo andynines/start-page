@@ -6,7 +6,7 @@ main.js
 
 const timeElem = document.getElementById("time-text");
 const greetingVocab = {
-	5: 	"Go to bed",
+	5: "Go to bed",
 	11: "Good morning",
 	16: "Good afternoon",
 	23: "Good evening",
@@ -32,7 +32,7 @@ function capitalize(s) {
 
 function writeTime() {
 	timeElem.innerHTML =
-			padNumber(now.getHours()) + ':' + padNumber(now.getMinutes());
+		padNumber(now.getHours()) + ':' + padNumber(now.getMinutes());
 }
 
 function updateClock() {

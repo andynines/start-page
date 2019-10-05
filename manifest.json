@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Minimalist Start Page",
+	"version": "1.0",
+	"description": "A new tab page with the time and weather.",
+	"icons": {
+		"16": "assets/icon16.png",
+		"48": "assets/icon48.png",
+		"128": "assets/icon128.png"
+	},
+	"author": "Andrew Senin",
+	"offline_enabled": true,
+	"short_name": "MinStart",
+	"permissions": [
+		"storage"
+	],
+	"options_page": "html/options.html",
+	"options_ui": {
+		"page": "html/options.html",
+		"open_in_tab": true
+	},
+	"chrome_url_overrides": {
+		"newtab": "html/index.html"
+	}
+}

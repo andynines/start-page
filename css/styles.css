@@ -1,0 +1,44 @@
+/*
+styles.css
+*/
+
+html {
+	/* Borrowed from the solarized color scheme */
+    background-color: rgb(7, 54, 66);
+}
+
+.info-text {
+	font-style: bold;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	color: white;
+	/* Prevent text highlighting */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.weather-div {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.master-div {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-left: 3%;
+	padding-right: 3%;
+	background-color: rgb(42, 42, 42);
+	border-top-left-radius: 3%;
+	border-top-right-radius: 3%;
+	border-bottom-left-radius: 3%;
+	border-bottom-right-radius: 3%;
+	box-shadow: -5px 5px 10px black;
+}

@@ -76,7 +76,10 @@ function writeWeatherInfo() {
 	)
 	.then(resp => resp.json())
 	.then(function(data) {
-		if (typeof data === "undefined" || data.cod != "200") return;
+		if (typeof data === "undefined" || data.cod != "200") {
+			console.log("Unexpected API response: code", data.cod);
+			return;
+		}
 		// Write today's forecast
 		var todayForecast = getNearestForecast(data.list, now);
 		document.getElementById("weather-today-temp").innerHTML =

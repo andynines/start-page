@@ -77,7 +77,7 @@ function writeWeatherInfo() {
 	.then(resp => resp.json())
 	.then(function(data) {
 		if (typeof data === "undefined" || data.cod != "200") {
-			console.log("Unexpected API response: code", data.cod);
+			console.log("Unexpected API response: code '" + data.cod + "'");
 			return;
 		}
 		// Write today's forecast
